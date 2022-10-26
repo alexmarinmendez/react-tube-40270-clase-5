@@ -20,6 +20,7 @@ const Video = (props) => {
           <img src={props.thumbnail} alt="Same alt value" />
           </div>
           <div className="video-info">
+          <button onClick={props.deleteVideo}>Delete this video</button>
           <h3>{props.title}</h3>
           <span>This video has {rate} stars</span>
           <button onClick={rateVideo}>Rate</button>
